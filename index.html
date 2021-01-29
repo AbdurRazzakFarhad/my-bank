@@ -13,14 +13,74 @@
     <title>My bank</title>
 </head>
 
+
+
 <body>
 
-    <h1 class="text-center text-warning">Welcome to My bank!</h1>
+    <div id="login-area">
+        <h1 class="text-center ">Welcome to My bank</h1>
+
+        <div class="sumbit-are mt-5 shadow p-5">
+            <h4>Login</h4>
+            <input type="text" class="form-control" placeholder="Enter your email">
+            <br>
+            <input type="password" class="form-control" placeholder="Enter your password">
+            <br>
+            <button id="login" class="btn btn-success">Enter</button>
+        </div>
+    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+
+    <div id="transaction-area">
+        <h1 class="text-center mb-5">Transaction Area</h1>
+
+
+        <div class="row mb-5 justify-content-md-around">
+            <div class="col-md-3 deposite p-3 rounded">
+                <h5>Deposite</h5>
+                <h1>$<span id="current-deposite">00</span></h1>
+            </div>
+
+            <div class="col-md-3 withdraw p-3 rounded">
+                <h5>Withdraw</h5>
+                <h1>$00</h1>
+            </div>
+
+            <div class="col-md-3 balance p-3 rounded">
+                <h5>Balance</h5>
+                <h1>$<span id="current-balance">1240</span></h1>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-md-around">
+            <div class="col-md-5 p-4 shadow">
+                <h4>Deposite</h4>
+                <input id="depositeAmount" type="text" class="form-control"
+                    placeholder="$ amount you want to deposite ">
+                <br>
+                <button id="addDeposite" class="btn btn-success">Deposite</button>
+            </div>
+
+            <div class="col-md-5 p-4 shadow">
+                <h4>Withdraw</h4>
+                <input type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                <br>
+                <button class="btn btn-success">Withdraw</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
         </script>
+
+    <script src="dynamic.js"></script>
 </body>
 
 </html>
